@@ -1,0 +1,7 @@
+{
+  "deployments": {
+    "compose": {
+      "file": "docker-compose.yml"
+    }
+  }
+}
