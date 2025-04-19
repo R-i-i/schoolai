@@ -1,0 +1,33 @@
+# ---- Web & ASGI ----
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+# ---- HTTP-клиент ----
+httpx==0.27.0
+
+# ---- Pydantic (модели/настройки) ----
+pydantic==1.10.15        # FastAPI 0.110 пока использует Pydantic v1
+
+# ---- База данных ----
+SQLAlchemy[asyncio]==2.0.29
+asyncpg==0.29.0          # драйвер PostgreSQL
+
+# ---- Миграции ----
+alembic==1.13.1
+
+# ---- Redis (асинхронный) ----
+redis==5.0.1              # включает redis.asyncio
+
+# ---- AWS S3 SDK (MinIO) ----
+boto3==1.34.86
+
+# ---- Upload файлов ----
+python-multipart==0.0.9
+
+# ---- OCR / CV ----  (можно убрать, если оставляете stub)
+pillow==10.3.0
+paddleocr==2.7.0
+realesrgan==0.3.0        # необязательно, но у вас был upscale
+
+# ---- Логирование (по желанию) ----
+loguru==0.7.2
